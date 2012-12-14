@@ -1,0 +1,15 @@
+{application, stargate, [
+	{description, "udp transfer base tcp."},
+	{vsn, "0.1.0"},
+	{modules, []},
+	{registered, [stargate_sup, stargate]},
+	{applications, [
+		kernel,
+		stdlib,
+		crypto
+%		public_key,
+%		ssl,
+	]},
+	{mod, {stargate, []}},
+	{env, []}
+]}.
