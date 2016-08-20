@@ -4,3 +4,6 @@ notifications:
   email: false
 otp_release:
   - 17.5 
+env:
+  global:
+    - PATH=$PATH:`pwd`"./deps/lager/"
