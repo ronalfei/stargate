@@ -1,5 +1,6 @@
 #StarGate - A General TCP transparent Proxy 
 
+[![Build Status](https://api.travis-ci.org/ronalfei/stargate.svg?branch=master)](https://travis-ci.org/ronalfei/stargate)
 ## A TCP transparent Proxy which use poolboy manage connects and use ranch receive request.
 
 ## Usage
