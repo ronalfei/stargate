@@ -1,0 +1,8 @@
+pool.config
+pool.config.bak
+pool.config.dev
+log
+*.log
+deps/*
+ebin/*
+_rel/*

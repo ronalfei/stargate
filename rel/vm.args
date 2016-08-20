@@ -1,0 +1,9 @@
+-name bpool@127.0.0.1
+-setcookie bpool
+-heart
+-boot start_sasl
++K true
+-P 134217727
+-Q 134217727
+-env ERL_MAX_PORTS 409600
+-s reloader

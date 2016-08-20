@@ -1,0 +1,58 @@
+{memcache, {listen, 8605}, {handler, raw_tcp_handler},
+    [
+          {
+		    [{size, 1}, {max_overflow, 20}]
+		  , [{host, {10,58,41,59}}, {port, 3030}]
+        }
+	]
+}.
+
+
+%%=====================akka======================
+
+{redis, {listen, 8602}, {handler, raw_tcp_handler},
+    [
+          {
+		    [{size, 5}, {max_overflow, 0}]
+		  , [{host, {10,81,211,205}}, {port, 6800}]
+        }
+        , {
+		    [{size, 5}, {max_overflow, 0}]
+		  , [{host, {10,36,7,119}}, {port, 6800}]
+        }
+
+	]
+}.
+
+
+
+%%=====================nlp======================
+{redis2, {listen, 8601}, {handler, raw_tcp_handler},
+    [
+          {
+	    	  [{size, 12}, {max_overflow, 0}]
+	    	, [{host, {10,208,95,53}}, {port, 9082}]
+	    }
+        , {
+	    	  [{size, 12}, {max_overflow, 0}]
+	    	, [{host, {10,208,95,23}}, {port, 9082}]
+	    }
+        , {
+	    	  [{size, 12}, {max_overflow, 0}]
+	    	, [{host, {10,208,95,24}}, {port, 9082}]
+	    }
+        , {
+	    	  [{size, 12}, {max_overflow, 0}]
+	    	, [{host, {10,208,95,25}}, {port, 9082}]
+	    }
+        , {
+	    	  [{size, 12}, {max_overflow, 0}]
+	    	, [{host, {10,208,95,26}}, {port, 9082}]
+	    }
+        , {
+	    	  [{size, 12}, {max_overflow, 0}]
+	    	, [{host, {10,208,94,56}}, {port, 9082}]
+	    }
+    ]
+}.
+%%==============================================%%

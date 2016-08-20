@@ -1,0 +1,13 @@
+{application, stargate, [
+	{description, ""},
+	{vsn, "0.2.0"},
+	{id, "git"},
+	{modules, []},
+	{registered, []},
+	{applications, [
+		kernel,
+		stdlib
+	]},
+	{mod, {stargate_app, []}},
+	{env, []}
+]}.
