@@ -8,7 +8,7 @@ start() ->
 	application:start(stargate).
 
 start(_Type, _Args) ->
-	lager:start(),
+	ok = lager:start(),
     application:start(sasl),
     application:start(crypto),
     application:start(ranch),

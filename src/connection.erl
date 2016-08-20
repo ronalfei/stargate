@@ -118,5 +118,6 @@ connect(Args) ->
         {ok, Socket} -> {ok, Socket};
         _ ->
             erlang:send_after(2000, self(), {reconnect}),
+            lager:warning("connect ~p error , reconnect after 2s ~n ", [Args]),
             {ok, nil}
     end.
