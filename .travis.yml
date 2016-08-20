@@ -7,3 +7,5 @@ otp_release:
 env:
   global:
     - PATH=$PATH:`pwd`"./deps/lager/"
+sudo: false
+os: linux
